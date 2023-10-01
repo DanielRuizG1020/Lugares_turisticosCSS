@@ -114,16 +114,16 @@ header {
 }
 
 
-/* Estilos para el contenedor de las imágenes */
+/* Estilos para el contenedor de las imágenes--> utilizando grid */
 .menugaleria {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Tres columnas */
-    grid-template-rows: 280px 150px 190px;; /* Tres filas de altura distinta*/
+    grid-template-rows: 280px 170px 230px;; /* Tres filas de altura distinta*/
     gap: 10px; /* Espacio entre las imágenes */
 }
 
 .menu1-item {
-    margin-bottom: 20px;
+    margin-bottom: 1px; 
 }
 
 .menu1-item img {
