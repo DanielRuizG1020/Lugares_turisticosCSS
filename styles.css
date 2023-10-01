@@ -129,8 +129,12 @@ header {
 .menu1-item img {
     max-width: 100%;
     height: auto;
+    transition: transform 0.3s;
 }
 
+.menu1-item:hover img {
+    transform: scale(1.3);
+}
 
 
 
