@@ -1,0 +1,141 @@
+/* Estilo para los elementos del menú */
+
+main {
+    background-color: #89dd9f; /* Código de color para blanco */
+    padding: 50px; /* Añadir espacio para el contenido en main */
+    color: #000000; /* Color de texto en el contenido (negro en este caso) */
+}
+/* Estilos para el encabezado (header) */
+header {
+    background-color: #7bbdf3;
+    color: #0f0f0f;
+    text-align: center;
+    padding: 1px;
+    border: solid;
+    border-radius: 30px;
+    margin: 15px;
+    font-family: "Arial", sans-serif; /* Cambia "Arial" al tipo de fuente deseado */
+    font-size: 25px
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 10px;
+    margin: 1px;
+    border-radius: 5px;
+    background-color: #edebe4;
+
+}
+
+
+.menu-item {
+    width: 800px; /* Ancho fijo para cada elemento */
+    height: 300px; /* Altura fija para cada elemento */
+    position: relative;
+    overflow: hidden;
+    margin-right: 20px; /* Margen derecho para separar los elementos */
+}
+
+/* Estilo para el efecto de sombra y texto descriptivo al pasar el mouse */
+.menu-item img {
+    width: 100%; /* La imagen ocupa todo el espacio dentro de .menu-item */
+    height: 100%; /* La imagen ocupa todo el espacio dentro de .menu-item */
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor sin distorsionarla */
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.menu-item:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}
+
+.menu-item p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.menu-item:hover p {
+    opacity: 1;
+}
+
+
+
+#contacto {
+
+    font-size: 15px;
+    font-style: italic;
+
+}
+
+/* Estilos generales para los contenedores */
+.container {
+    display: flex;
+}
+
+/* Estilos para el navbar */
+.navbar {
+    background-color: #f886c5;
+    color: #181616;
+    width: 15%; /* Ancho del navbar --> contenido de la izquiera*/
+    height: 150px; /* Altura del navbar  */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px;
+    border: solid;
+    border-radius: 30px;
+}
+
+.navbar li {
+    margin: 10px 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos para el contenido a la derecha del navbar */
+.content {
+    width: 80%; /* Ancho para el contenido de la derecha */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Estilos para el contenedor de las imágenes */
+.menugaleria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    grid-template-rows: 280px 150px 190px;; /* Tres filas de altura distinta*/
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+.menu1-item {
+    margin-bottom: 20px;
+}
+
+.menu1-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+ul,ol{
+    font-size: 20px;
+
+
+}
